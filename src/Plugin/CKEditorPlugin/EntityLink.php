@@ -19,7 +19,7 @@ class EntityLink extends CKEditorPluginBase {
    * {@inheritdoc}
    */
   public function getFile() {
-    return drupal_get_path('module', 'ckeditor_entity_link') . '/js/plugins/entitylink/plugin.js';
+    return \Drupal::service('extension.list.module')->getPath('ckeditor_entity_link') . '/js/plugins/entitylink/plugin.js';
   }
 
   /**
@@ -45,7 +45,7 @@ class EntityLink extends CKEditorPluginBase {
    * {@inheritdoc}
    */
   public function getButtons() {
-    $path = drupal_get_path('module', 'ckeditor_entity_link') . '/js/plugins/entitylink';
+    $path = \Drupal::service('extension.list.module')->getPath('ckeditor_entity_link') . '/js/plugins/entitylink';
     return [
       'EntityLink' => [
         'label' => $this->t('Link'),
