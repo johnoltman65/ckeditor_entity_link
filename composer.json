@@ -1,0 +1,14 @@
+{
+    "name": "drupal/ckeditor_entity_link",
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/ckeditor_entity_link",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/ckeditor_entity_link",
+        "source": "https://git.drupalcode.org/project/ckeditor_entity_link"
+    },
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/core": "^8 || ^9 || ^10"
+    }
+}
